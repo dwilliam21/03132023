@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Formulário</title>
+		<meta charset="utf-8">
+		<style>
+			fieldset {border-radius: 20px; font-family: arial}
+			form {color: white}
+		</style>
+	</head>
+	<body bgcolor="#836FFF">
+		<h1 align="center">Calculadora</h1>
+
+		<form action="exibir.php" method="POST">
+			<fieldset>
+			<h4>Digite 2 números:</h4>
+
+			<input type="number" name="num1">
+			<input type="number" name="num2">
+			<br>
+			<br>
+			<h4>Selecione a operação:</h4>
+					
+			<input type="radio" id="soma" name="operacao" value="SOMA">
+			<label for="soma">Soma</label>
+			<br>
+			<input type="radio" id="subt" name="operacao" value="SUBT">
+			<label for="subt">Subtração</label> 
+			<br>
+			<input type="radio" id="mult" name="operacao" value="MULT">
+			<label for="mult">Multiplicação</label>
+ 			<br>
+			<input type="radio" id="divs" name="operacao" value="DIVS">
+			<label for="divs">Divisão</label>
+			<br>
+			<br>
+			<input type="submit" value="Enviar">
+			</fieldset>
+		</form>	
+	</body>
+</html>
